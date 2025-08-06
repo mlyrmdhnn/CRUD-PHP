@@ -1,24 +1,21 @@
 <?php
 require "sql.php";
+session_start();
 
 // set cookie
 if(isset($_COOKIE['id']) && isset($_COOKIE['key'])) {
   $id = $_COOKIE['id'];
   $key = $_COOKIE['key'];
 
-  // ambil usr berdasarkan id
   $result = mysqli_query($sql, "SELECT username FROM user WHERE id = $id");
   $row = mysqli_fetch_assoc($result);
 
-  // cek cookie dan username
   if($key === hash('sha256', $row['username'])) {
     $_SESSION['login'] = true;
   }
 }
 
-
 // set session
-session_start();
 if(isset($_SESSION['login'])) {
   header("Location: index.php");
 }
