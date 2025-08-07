@@ -30,7 +30,7 @@ CREATE TABLE mahasiswa (
 );
 ```
 
-### Tabel `user`
+### 🔹 Tabel `user`
 
 ```sql
 CREATE TABLE user (
