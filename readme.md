@@ -1,14 +1,25 @@
-# PHP Learn – Simple App with User & Mahasiswa Table
+# 📘 PHP Learn – Simple App with User & Mahasiswa Table
+
+Proyek ini adalah latihan sederhana menggunakan PHP dan MySQL, dengan fitur manajemen data mahasiswa dan autentikasi user.
+
+---
 
 ## 📥 Installasi
 
-1. **Clone atau download repository ini.**
-2. Simpan folder project di dalam folder `htdocs` milik XAMPP kamu.
-3. Buat database bernama phplearn
+1. **Clone atau download repository ini**
+2. Simpan folder project ke dalam folder `htdocs` di XAMPP
+3. Buka phpMyAdmin dan buat database baru bernama: phplearn
 
 
-## Perintah untuk buat tabel mahasiswa, silahkan di copy lalu jalankan di sql milikmu
+---
 
+## 🧱 Struktur Database
+
+### 🔹 Tabel `mahasiswa`
+
+Silakan salin dan jalankan SQL berikut di tab SQL phpMyAdmin:
+
+```sql
 CREATE TABLE mahasiswa (
   id INT AUTO_INCREMENT PRIMARY KEY,
   gambar VARCHAR(255),
@@ -18,9 +29,7 @@ CREATE TABLE mahasiswa (
   jurusan VARCHAR(255)
 );
 
-
-## Perintah untuk buat tabel user, silahkan di copy lalu jalankan di sql milikmu
-
+### 🔹 Tabel `user`
 CREATE TABLE user (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(15),
