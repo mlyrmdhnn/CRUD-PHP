@@ -28,10 +28,14 @@ CREATE TABLE mahasiswa (
   nrp VARCHAR(255),
   jurusan VARCHAR(255)
 );
+```
 
-### 🔹 Tabel `user`
+### Tabel `user`
+
+```sql
 CREATE TABLE user (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(15),
   password VARCHAR(255)
 );
+```
