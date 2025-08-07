@@ -8,7 +8,7 @@ Proyek ini adalah latihan sederhana menggunakan PHP dan MySQL, dengan fitur mana
 
 1. **Clone atau download repository ini**
 2. Simpan folder project ke dalam folder `htdocs` di XAMPP
-3. Buka phpMyAdmin dan buat database baru bernama: phplearn
+3. Buka phpMyAdmin dan buat database baru bernama: `phplearn`
 
 
 ---
