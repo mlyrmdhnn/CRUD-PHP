@@ -1,5 +1,28 @@
-pull repo ini lalu simpan di file htdocs anda di dalam xampp
-buat database bernama = phplearn
-di dalam database phplearn ada 2 tabel yaitu user dan mahasiswa
-untuk tabel mahasiswa ada 6 kolom, yaitu (id(id nya auto increment primary key), gambar, nama, email, nrp, jurusan) selain id tipe datanya adalah varchar 255
-untuk user ada 3 kolom, yaitu id, username, dan password, tipe data untuk username varchar15, sedangkan untuk password adalah varchar255
+# PHP Learn – Simple App with User & Mahasiswa Table
+
+## 📥 Installasi
+
+1. **Clone atau download repository ini.**
+2. Simpan folder project di dalam folder `htdocs` milik XAMPP kamu.
+3. Buat database bernama phplearn
+
+
+## Perintah untuk buat tabel mahasiswa, silahkan di copy lalu jalankan di sql milikmu
+
+CREATE TABLE mahasiswa (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  gambar VARCHAR(255),
+  nama VARCHAR(255),
+  email VARCHAR(255),
+  nrp VARCHAR(255),
+  jurusan VARCHAR(255)
+);
+
+
+## Perintah untuk buat tabel user, silahkan di copy lalu jalankan di sql milikmu
+
+CREATE TABLE user (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(15),
+  password VARCHAR(255)
+);
